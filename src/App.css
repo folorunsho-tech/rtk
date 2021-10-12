@@ -1,38 +1,99 @@
-.App {
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --dark: rgb(22, 22, 22);
+  --light: white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile {
+  width: 150px;
+  object-fit: cover;
+  height: 150px;
+  border-radius: 100%;
+  margin: 1rem 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* .border {
+  color: blue;
+} */
+.theme-btns {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 3rem;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.skills-container {
+  text-align: left;
+  padding: 0 3rem;
+  align-items: center;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: blue;
+}
+
+/* LIGHT THEME */
+
+.card-body-light {
+  background-color: var(--light);
+  color: black;
+  padding: 2rem 0;
+  margin: 2rem auto;
+  max-width: 30rem;
+  border-radius: 20px;
+}
+.border-light {
+  color: violet;
+}
+.theme-btn-light {
+  background-color: violet;
+}
+.body-light {
+  padding: 3rem;
+  background-color: violet;
+}
+.pills-light {
+  background-color: violet;
+  border-radius: 40px;
+  padding: 0.5rem;
+}
+
+/* DARK THEME */
+.body-dark {
+  padding: 3rem;
+  background-color: tomato;
+}
+
+.card-body-dark {
+  background-color: var(--dark);
   color: white;
+  padding: 2rem 0;
+  margin: 2rem auto;
+  max-width: 30rem;
+  border-radius: 20px;
+}
+.border-dark {
+  color: tomato;
+}
+.theme-btn-dark {
+  background-color: tomato;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pills-dark {
+  background-color: tomato;
+  border-radius: 40px;
+  padding: 0.5rem;
+  /* color: white; */
 }
